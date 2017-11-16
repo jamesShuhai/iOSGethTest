@@ -19,6 +19,8 @@
 @property (nonatomic, strong) GethKeyStore *mKS;
 @property (nonatomic, strong) GethContext *mCTX;
 @property (weak, nonatomic) IBOutlet UITextField *sourceActPWDTF;
+@property (weak, nonatomic) IBOutlet UITextView *importTextV;
+@property (weak, nonatomic) IBOutlet UITextField *importPWDTextF;
 
 @property (nonatomic, strong) GethTransactOpts *mOpts;
 
@@ -50,7 +52,7 @@
     self.mKS = GethNewKeyStore(keyStorePath, GethLightScryptN, GethLightScryptP);
     
     NSError *ethError = nil;
-    self.mEC = GethNewEthereumClient(@"http://170.16.115.90:9245", &ethError);
+    self.mEC = GethNewEthereumClient(@"http://172.16.192.90:9245", &ethError);
     self.mCTX = GethNewContext();
 }
 
@@ -211,6 +213,22 @@
     GethChainConfig *mainNetChain = GethMainnetChainConfig();
     
     NSLog(@"mainNetChain.chainID = %lld\n,mainNetChain.homesteadBlock=%lld",mainNetChain.chainID,mainNetChain.homesteadBlock);
+}
+- (IBAction)importBtnClicked:(UIButton *)sender {
+    NSError *importErr = nil;
+    
+    if (self.importPWDTextF.text.length>0 && self.importPWDTextF.text.length>0) {
+        NSData *importData = [self dataFromHexString:self.importTextV.text];
+        
+        
+        GethAccount *importAct = [self.mKS importKey:importData passphrase:self.importPWDTextF.text newPassphrase:self.importPWDTextF.text error:&importErr];
+        
+    }else{
+        [SVProgressHUD showErrorWithStatus:@"请输入正确的用户信息和密码！"];
+    }
+    if (importErr!=nil) {
+        [SVProgressHUD showErrorWithStatus:importErr.localizedDescription];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
