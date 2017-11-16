@@ -44,7 +44,7 @@
     self.mKS = GethNewKeyStore(keyStorePath, GethLightScryptN, GethLightScryptP);
     
     NSError *ethError = nil;
-    self.myEC = GethNewEthereumClient(@"http://170.16.115.90:9245", &ethError);
+    self.myEC = GethNewEthereumClient(@"http://127.0.0.1:9090", &ethError);
     
     NSLog(@"self.mKS = %@,%p",self.mKS._ref,self.mKS._ref);
     GoSeqRef *goRef = (GoSeqRef *)self.myEC._ref;
@@ -130,7 +130,7 @@
             GethAccount *act = [listAcc get:actIndex error:&accError];
             
             NSError *ethError = nil;
-            GethEthereumClient *ec = GethNewEthereumClient(@"http://170.16.115.90:9245", &ethError);
+            GethEthereumClient *ec = GethNewEthereumClient(@"http://127.0.0.1:9090", &ethError);
             
             
             NSData * actdata = [self.mKS exportKey:act passphrase:self.verifyPWDTF.text newPassphrase:self.verifyPWDTF.text error:&ethError];
@@ -170,7 +170,7 @@
             
             NSError *delError = nil;
             NSError *ecError = nil;
-            GethEthereumClient *ec = GethNewEthereumClient(@"http://170.16.115.90:9245", &ecError);
+            GethEthereumClient *ec = GethNewEthereumClient(@"http://127.0.0.1:9090", &ecError);
             
             BOOL isDel = [self.mKS deleteAccount:act passphrase:@"" error:&delError];
             
@@ -241,7 +241,7 @@
     NSLog(@"address==%@",act.getAddress.getHex);
     //1.5    Connect to a ethereum node
     NSError *ethError = nil;
-    GethEthereumClient *ec = GethNewEthereumClient(@"http://170.16.115.90:9245", &ethError);
+    GethEthereumClient *ec = GethNewEthereumClient(@"http://127.0.0.1:9090", &ethError);
     
     
     NSData * actdata = [ks exportKey:act passphrase:@"1234567890" newPassphrase:@"1234567890" error:&ethError];
