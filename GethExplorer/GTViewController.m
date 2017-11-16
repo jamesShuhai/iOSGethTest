@@ -52,7 +52,7 @@
     self.mKS = GethNewKeyStore(keyStorePath, GethLightScryptN, GethLightScryptP);
     
     NSError *ethError = nil;
-    self.mEC = GethNewEthereumClient(@"http://172.16.192.90:9245", &ethError);
+    self.mEC = GethNewEthereumClient(@"http://127.0.0.1:9090", &ethError);
     self.mCTX = GethNewContext();
 }
 
