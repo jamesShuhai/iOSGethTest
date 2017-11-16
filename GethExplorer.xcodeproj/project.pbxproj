@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371444F01FB03C0300E52430 /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371444EF1FB03C0300E52430 /* GTViewController.m */; };
+		37208AEB1FAC160200E7BE2E /* GethMJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 37208AEA1FAC160200E7BE2E /* GethMJExtensionConfig.m */; };
 		379A26771FA97A4D00BE9AB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A26761FA97A4D00BE9AB3 /* AppDelegate.m */; };
 		379A267A1FA97A4D00BE9AB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A26791FA97A4D00BE9AB3 /* ViewController.m */; };
 		379A267D1FA97A4D00BE9AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379A267B1FA97A4D00BE9AB3 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		379A26851FA97A4D00BE9AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A26841FA97A4D00BE9AB3 /* main.m */; };
 		379A268F1FA97A4D00BE9AB3 /* GethExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A268E1FA97A4D00BE9AB3 /* GethExplorerTests.m */; };
 		379A269A1FA97A4D00BE9AB3 /* GethExplorerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A26991FA97A4D00BE9AB3 /* GethExplorerUITests.m */; };
+		37A754E81FB19D6E0089DE4E /* MySigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A754E71FB19D6E0089DE4E /* MySigner.m */; };
+		37A754EB1FB1A86B0089DE4E /* myTransactOpts.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A754EA1FB1A86B0089DE4E /* myTransactOpts.m */; };
+		62003A8E25744F438B3325D7 /* libPods-GethExplorer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 723CC1761792EF663FDDE069 /* libPods-GethExplorer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371444EE1FB03C0300E52430 /* GTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTViewController.h; sourceTree = "<group>"; };
+		371444EF1FB03C0300E52430 /* GTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
+		371444F21FB0425A00E52430 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		37208AE91FAC160200E7BE2E /* GethMJExtensionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GethMJExtensionConfig.h; sourceTree = "<group>"; };
+		37208AEA1FAC160200E7BE2E /* GethMJExtensionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GethMJExtensionConfig.m; sourceTree = "<group>"; };
 		379A26721FA97A4D00BE9AB3 /* GethExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GethExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379A26751FA97A4D00BE9AB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		379A26761FA97A4D00BE9AB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		379A26781FA97A4D00BE9AB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		379A26791FA97A4D00BE9AB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		379A26791FA97A4D00BE9AB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		379A267C1FA97A4D00BE9AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		379A267E1FA97A4D00BE9AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379A26811FA97A4D00BE9AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,13 @@
 		379A26951FA97A4D00BE9AB3 /* GethExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GethExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379A26991FA97A4D00BE9AB3 /* GethExplorerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GethExplorerUITests.m; sourceTree = "<group>"; };
 		379A269B1FA97A4D00BE9AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A754E61FB19D6E0089DE4E /* MySigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySigner.h; sourceTree = "<group>"; };
+		37A754E71FB19D6E0089DE4E /* MySigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySigner.m; sourceTree = "<group>"; };
+		37A754E91FB1A86B0089DE4E /* myTransactOpts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myTransactOpts.h; sourceTree = "<group>"; };
+		37A754EA1FB1A86B0089DE4E /* myTransactOpts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myTransactOpts.m; sourceTree = "<group>"; };
+		6C9A7B1896A45E9738985B7C /* Pods-GethExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GethExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GethExplorer/Pods-GethExplorer.release.xcconfig"; sourceTree = "<group>"; };
+		723CC1761792EF663FDDE069 /* libPods-GethExplorer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GethExplorer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BA986F067F1D23A7D93EF6 /* Pods-GethExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GethExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GethExplorer/Pods-GethExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62003A8E25744F438B3325D7 /* libPods-GethExplorer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,8 @@
 				379A268D1FA97A4D00BE9AB3 /* GethExplorerTests */,
 				379A26981FA97A4D00BE9AB3 /* GethExplorerUITests */,
 				379A26731FA97A4D00BE9AB3 /* Products */,
+				8E69E8755411F6A446832B28 /* Pods */,
+				FCE843959F3C861BF0B6BC24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +125,15 @@
 				379A26761FA97A4D00BE9AB3 /* AppDelegate.m */,
 				379A26781FA97A4D00BE9AB3 /* ViewController.h */,
 				379A26791FA97A4D00BE9AB3 /* ViewController.m */,
+				371444EE1FB03C0300E52430 /* GTViewController.h */,
+				371444EF1FB03C0300E52430 /* GTViewController.m */,
+				37208AE91FAC160200E7BE2E /* GethMJExtensionConfig.h */,
+				37208AEA1FAC160200E7BE2E /* GethMJExtensionConfig.m */,
+				37A754E61FB19D6E0089DE4E /* MySigner.h */,
+				37A754E71FB19D6E0089DE4E /* MySigner.m */,
+				37A754E91FB1A86B0089DE4E /* myTransactOpts.h */,
+				37A754EA1FB1A86B0089DE4E /* myTransactOpts.m */,
+				371444F21FB0425A00E52430 /* PrefixHeader.pch */,
 				379A267B1FA97A4D00BE9AB3 /* Main.storyboard */,
 				379A267E1FA97A4D00BE9AB3 /* Assets.xcassets */,
 				379A26801FA97A4D00BE9AB3 /* LaunchScreen.storyboard */,
@@ -132,6 +161,23 @@
 			path = GethExplorerUITests;
 			sourceTree = "<group>";
 		};
+		8E69E8755411F6A446832B28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5BA986F067F1D23A7D93EF6 /* Pods-GethExplorer.debug.xcconfig */,
+				6C9A7B1896A45E9738985B7C /* Pods-GethExplorer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCE843959F3C861BF0B6BC24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				723CC1761792EF663FDDE069 /* libPods-GethExplorer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379A269E1FA97A4D00BE9AB3 /* Build configuration list for PBXNativeTarget "GethExplorer" */;
 			buildPhases = (
+				D6D0599F9B72FAE6EB896785 /* [CP] Check Pods Manifest.lock */,
 				379A266E1FA97A4D00BE9AB3 /* Sources */,
 				379A266F1FA97A4D00BE9AB3 /* Frameworks */,
 				379A26701FA97A4D00BE9AB3 /* Resources */,
+				CED28E14A6A4986E260659E2 /* [CP] Embed Pods Frameworks */,
+				214BB3CCCBFE2C3E5D092798 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +309,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		214BB3CCCBFE2C3E5D092798 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GethExplorer/Pods-GethExplorer-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GethExplorer/Pods-GethExplorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CED28E14A6A4986E260659E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GethExplorer/Pods-GethExplorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6D0599F9B72FAE6EB896785 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GethExplorer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		379A266E1FA97A4D00BE9AB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A754EB1FB1A86B0089DE4E /* myTransactOpts.m in Sources */,
+				37208AEB1FAC160200E7BE2E /* GethMJExtensionConfig.m in Sources */,
 				379A267A1FA97A4D00BE9AB3 /* ViewController.m in Sources */,
+				371444F01FB03C0300E52430 /* GTViewController.m in Sources */,
 				379A26851FA97A4D00BE9AB3 /* main.m in Sources */,
 				379A26771FA97A4D00BE9AB3 /* AppDelegate.m in Sources */,
+				37A754E81FB19D6E0089DE4E /* MySigner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +461,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -409,6 +517,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -428,28 +537,39 @@
 		};
 		379A269F1FA97A4D00BE9AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BA986F067F1D23A7D93EF6 /* Pods-GethExplorer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L5XEXXEZG;
+				DEVELOPMENT_TEAM = J89N2UZWTM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GethExplorer/PrefixHeader.pch";
 				INFOPLIST_FILE = GethExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjhl.GethExplorer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vport.shuhai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		379A26A01FA97A4D00BE9AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9A7B1896A45E9738985B7C /* Pods-GethExplorer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L5XEXXEZG;
+				DEVELOPMENT_TEAM = J89N2UZWTM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GethExplorer/PrefixHeader.pch";
 				INFOPLIST_FILE = GethExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjhl.GethExplorer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vport.shuhai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
